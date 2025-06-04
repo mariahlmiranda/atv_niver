@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EBAC Tech Talks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>olaaaaaaaaa</h1>
-    <img src="./images/backend.png">
+    <header class="hero">
+        <div class="container">
+           
+            <p class="hero__text">
+                O maior evento do Brasil começa em <br><span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Pará lanches
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        20/06/2025 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirmar presença
+                </a>
+            </div>
+        </div>
+    </header>
+   
+    <section class="event event--frontend"> 
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Niko, a foca</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos sequi.
+                </p>
+            </div>
+            <img class="event__image" src="./images/niko.png" alt="niko">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Bolo</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos sequi.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bolo.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Salgado</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos sequi.
+                </p>
+            </div>
+            <img class="event__image" src="./images/saguado.png" alt="Data Science">
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
